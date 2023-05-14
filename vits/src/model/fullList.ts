@@ -10,7 +10,7 @@ interface List {
 }
 
 export default class fullList implements List{
-    static instance:fullList
+    static instance:fullList= new fullList()
    private constructor(private _list:ListItems[]=[]){}
 
     get list():ListItems[]{
